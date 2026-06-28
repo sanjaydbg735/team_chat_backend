@@ -113,22 +113,6 @@ cd services/api-server && go test ./...
 
 ---
 
-## Documentation
-
-| Doc | Contents |
-|---|---|
-| [01 — Architecture Diagram](./document/01_hld_architecture_diagram.md) | Runtime flow, module topology, channel model |
-| [02 — Component Specs](./document/02_hld_component_specifications.md) | Each component + trade-offs; implemented vs roadmap |
-| [03 — Data Flows](./document/03_hld_data_flows.md) | Send, delta-sync, multi-channel WS, channel lifecycle |
-| [04 — Data Model](./document/04_data_model.md) | Schema, ERD, indexes and their rationale |
-| [05 — API Reference](./document/05_api_reference.md) | Every endpoint with curl examples |
-| [06 — Interview Q&A](./document/06_interview_qa.md) | What/why/how for each design decision |
-| [07 — Improvements & Roadmap](./document/07_improvements_roadmap.md) | What to build next and why |
-| [08 — Guarantees & Semantics](./document/08_guarantees.md) | What the system guarantees, conditionally guarantees, and does not |
-| [09 — Testing Guide](./document/09_testing_guide.md) | Step-by-step testing with Postman + terminal/curl + WebSocket |
-
----
-
 ## Status
 
 Implemented: multi-channel + DM messaging, membership authorization, idempotent
