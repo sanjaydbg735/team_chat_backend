@@ -1,0 +1,16 @@
+// go.work ties the three TeamChat modules into a single development workspace.
+//
+// With this file present, `go build ./...` from the repo root resolves
+// teamchat/shared to the local ./shared directory for both services — no need
+// to publish or version-tag the shared module during development.
+//
+// To build a single service for deployment (as if it were its own repo), cd
+// into its directory; the replace directive in each service go.mod keeps the
+// local resolution working outside the workspace too.
+go 1.19
+
+use (
+	./shared
+	./services/api-server
+	./services/ws-worker
+)
